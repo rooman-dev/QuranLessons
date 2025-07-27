@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - QuranLessons</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Bismillah Header -->
+    <div class="bismillah-header">
+<p class="bismillah-text">
+  لَا إِلٰهَ إِلَّا ٱللَّٰهُ مُحَمَّدٌ رَسُولُ ٱللَّٰهِ
+</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-moon"></i>
+                <span>QuranLessons</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="registration.html" class="nav-link active">Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a href="lessons.html" class="nav-link">Lessons</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content with proper spacing -->
+    <main class="main-content" style="margin-top: 110px;">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content fade-in-up">
+                    <h1>Join Our Quran Learning Community</h1>
+                    <p>Begin your spiritual journey with personalized Quran lessons</p>
+                    <div class="divider"></div>
+                    <div class="arabic-verse">
+                        <p>وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ</p>
+                        <span>"And We have certainly made the Quran easy for remembrance" - Quran 54:17</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Form Section -->
+        <section class="registration-section">
+            <div class="container">
+                <div class="registration-container fade-in-up">
+                    <div class="registration-header">
+                        <div class="header-icon">
+                        </div>
+                        <h2>Student Registration</h2>
+                    </div>
+
+                    <form id="registrationForm" class="registration-form">
+                        <!-- Personal Information Card -->
+                        <div class="form-card">
+                            <div class="card-header">
+                                <h3><i class="fas fa-user"></i> Personal Information</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="firstName">First Name *</label>
+                                        <input type="text" id="firstName" name="firstName" required>
+                                        <span class="error-message"></span>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="lastName">Last Name *</label>
+                                        <input type="text" id="lastName" name="lastName" required>
+                                        <span class="error-message"></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="email">Email Address *</label>
+                                        <input type="email" id="email" name="email" required>
+                                        <span class="error-message"></span>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="phone">Phone Number(Whatsapp) *</label>
+                                        <input type="tel" id="phone" name="phone" required>
+                                        <span class="error-message"></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="age">Age Group *</label>
+                                        <select id="age" name="age" required>
+                                            <option value="">Select Age Group</option>
+                                            <option value="5-10">5-10 years</option>
+                                            <option value="11-17">11-17 years</option>
+                                            <option value="18-30">18-30 years</option>
+                                            <option value="31-50">31-50 years</option>
+                                            <option value="50+">50+ years</option>
+                                        </select>
+                                        <span class="error-message"></span>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="gender">Gender *</label>
+                                        <select id="gender" name="gender" required>
+                                            <option value="">Select Gender</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                        </select>
+                                        <span class="error-message"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Learning Preferences Card -->
+                        <div class="form-card">
+                            <div class="card-header">
+                                <h3><i class="fas fa-book-quran"></i> Learning Preferences</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="form-group">
+                                    <label for="currentLevel">Current Quran Knowledge Level *</label>
+                                    <select id="currentLevel" name="currentLevel" required>
+                                        <option value="">Select Your Level</option>
+                                        <option value="beginner">Beginner (Cannot read Arabic)</option>
+                                        <option value="basic">Basic (Can read with difficulty)</option>
+                                        <option value="intermediate">Intermediate (Can read fluently)</option>
+                                        <option value="advanced">Advanced (Know Tajweed rules)</option>
+                                        <option value="hafiz">Hafiz/Hafiza</option>
+                                    </select>
+                                    <span class="error-message"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="learningGoals">Learning Goals *</label>
+                                    <select id="learningGoals" name="learningGoals" required>
+                                        <option value="">Select Your Goal</option>
+                                        <option value="basic-reading">Learn to read Quran</option>
+                                        <option value="tajweed">Learn Tajweed rules</option>
+                                        <option value="memorization">Memorize specific Surahs</option>
+                                        <option value="full-memorization">Complete Quran memorization</option>
+                                        <option value="arabic-understanding">Understand Arabic meanings</option>
+                                    </select>
+                                    <span class="error-message"></span>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="preferredTime">Preferred Class Time *</label>
+                                        <select id="preferredTime" name="preferredTime" required>
+                                            <option value="">Select Time</option>
+                                            <option value="morning">Morning (6:00 AM - 12:00 PM)</option>
+                                            <option value="afternoon">Afternoon (12:00 PM - 6:00 PM)</option>
+                                            <option value="evening">Evening (6:00 PM - 9:00 PM)</option>
+                                            <option value="night">Night (9:00 PM - 11:00 PM)</option>
+                                        </select>
+                                        <span class="error-message"></span>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="timezone">Your Timezone *</label>
+                                        <select id="timezone" name="timezone" required>
+                                            <option value="">Select Timezone</option>
+                                            <option value="GMT">GMT (London)</option>
+                                            <option value="EST">EST (New York)</option>
+                                            <option value="PST">PST (Los Angeles)</option>
+                                            <option value="IST">IST (India)</option>
+                                            <option value="GST">GST (Dubai)</option>
+                                            <option value="PKT">PKT (Pakistan)</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <span class="error-message"></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Preferred Session Frequency *</label>
+                                    <div class="radio-grid">
+                                        <div class="radio-option">
+                                            <input type="radio" id="daily" name="sessionFrequency" value="daily" required>
+                                            <label for="daily">
+                                                <div class="radio-content">
+                                                    <i class="fas fa-calendar-day"></i>
+                                                    <span>Daily (7 days/week)</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="radio-option">
+                                            <input type="radio" id="frequent" name="sessionFrequency" value="frequent" required>
+                                            <label for="frequent">
+                                                <div class="radio-content">
+                                                    <i class="fas fa-calendar-week"></i>
+                                                    <span>Frequent (5 days/week)</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="radio-option">
+                                            <input type="radio" id="regular" name="sessionFrequency" value="regular" required>
+                                            <label for="regular">
+                                                <div class="radio-content">
+                                                    <i class="fas fa-calendar-alt"></i>
+                                                    <span>Regular (3 days/week)</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="radio-option">
+                                            <input type="radio" id="weekend" name="sessionFrequency" value="weekend" required>
+                                            <label for="weekend">
+                                                <div class="radio-content">
+                                                    <i class="fas fa-calendar"></i>
+                                                    <span>Weekend only</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <span class="error-message"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Additional Information Card -->
+                        <div class="form-card">
+                            <div class="card-header">
+                                <h3><i class="fas fa-info-circle"></i> Additional Information</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="form-group">
+                                    <label for="previousExperience">Previous Quran Learning Experience</label>
+                                    <textarea id="previousExperience" name="previousExperience" rows="3" placeholder="Tell us about your previous experience with Quran learning (optional)"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="specialRequests">Special Requests or Comments</label>
+                                    <textarea id="specialRequests" name="specialRequests" rows="3" placeholder="Any special requirements or additional information you'd like to share (optional)"></textarea>
+                                </div>
+
+                                <div class="checkbox-group">
+                                    <div class="checkbox-option">
+                                        <input type="checkbox" id="newsletter" name="newsletter">
+                                        <label for="newsletter">
+                                            <div class="checkbox-content">
+                                                <i class="fas fa-envelope"></i>
+                                                <span>Subscribe to our newsletter for Islamic content and updates</span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    <div class="checkbox-option">
+                                        <input type="checkbox" id="terms" name="terms" required>
+                                        <label for="terms">
+                                            <div class="checkbox-content">
+                                                <i class="fas fa-file-contract"></i>
+                                                <span>I agree to the <a href="#" class="terms-link">Terms and Conditions</a> *</span>
+                                            </div>
+                                        </label>
+                                        <span class="error-message"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary btn-large">
+                                <i class="fas fa-paper-plane"></i>
+                                Submit Registration
+                            </button>
+                            <p class="submit-note">Our team will contact you within 24 hours</p>
+                        </div>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="successMessage" class="success-card" style="display: none;">
+                        <div class="success-content">
+                            <div class="success-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>Registration Successful!</h3>
+                            <p>Thank you for registering. Our team will contact you within 24 hours to schedule your first lesson.</p>
+                            <div class="arabic-verse">
+                                <p>بَارَكَ اللَّهُ فِيكَ</p>
+                                <span>May Allah bless you</span>
+                            </div>
+                            <a href="index.html" class="btn btn-secondary">Return to Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-moon"></i>
+                        <span>QuranLessons</span>
+                    </div>
+                    <p>Dedicated to providing quality Quranic education for all ages and backgrounds.</p>
+                    <div class="arabic-verse-footer">
+                        <p>وَقُل رَّبِّ زِدْنِي عِلْمًا</p>
+                        <span>"My Lord, increase me in knowledge"</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="lessons.html">Lessons</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="lessons.html#beginner">Beginner Reading</a></li>
+                        <li><a href="lessons.html#tajweed">Tajweed Classes</a></li>
+                        <li><a href="lessons.html#hifz">Memorization</a></li>
+                        <li><a href="lessons.html#kids">Kids Program</a></li>
+                        <li><a href="lessons.html#advanced">Advanced Studies</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@quranlessons.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-clock"></i> 24/7 Available</p>
+                        <p><i class="fas fa-globe"></i> Worldwide Classes</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 QuranLessons. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#">Terms of Service</a>
+                    <span>|</span>
+                    <a href="#">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

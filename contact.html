@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - QuranLessons</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Bismillah Header -->
+    <div class="bismillah-header">
+<p class="bismillah-text">
+  لَا إِلٰهَ إِلَّا ٱللَّٰهُ مُحَمَّدٌ رَسُولُ ٱللَّٰهِ
+</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-moon"></i>
+                <span>QuranLessons</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="registration.html" class="nav-link">Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a href="lessons.html" class="nav-link">Lessons</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content with proper spacing -->
+    <main class="main-content" style="margin-top: 110px;">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content fade-in-up">
+                    <h1>Contact Us</h1>
+                    <p>We're here to help you begin your Quranic journey</p>
+                    <div class="divider"></div>
+                    <div class="arabic-verse">
+                        <p>وَبَشِّرِ الصَّابِرِينَ</p>
+                        <span>"And give good tidings to the patient" - Quran 2:155</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section class="contact-info-section">
+            <div class="container">
+                <div class="contact-cards-grid">
+                    <div class="contact-card fade-in-up" data-delay="100">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>Get in touch with our support team</p>
+                        <div class="contact-details">
+                            <a href="mailto:info@quranlessons.com">info@quranlessons.com</a>
+                            <a href="mailto:support@quranlessons.com">support@quranlessons.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card fade-in-up" data-delay="200">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>Speak directly with our team</p>
+                        <div class="contact-details">
+                            <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                            <span class="availability">Available 24/7</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-card fade-in-up" data-delay="300">
+                        <div class="contact-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Live Chat</h3>
+                        <p>Instant support and guidance</p>
+                        <div class="contact-details">
+                            <button class="btn btn-secondary" onclick="alert('Live chat feature coming soon!')">Start Chat</button>
+                            <span class="availability">Online Now</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-card fade-in-up" data-delay="400">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Class Hours</h3>
+                        <p>When we're teaching</p>
+                        <div class="contact-details">
+                            <span>Monday - Friday: 9 AM - 9 PM</span>
+                            <span>Weekend: 10 AM - 6 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-form-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container fade-in-up">
+                        <div class="form-header">
+                            <h2>Send Us a Message</h2>
+                            <p>We'll get back to you within 24 hours</p>
+                        </div>
+                        
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                                <div class="error-message">Please enter your first name</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                                <div class="error-message">Please enter your last name</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <div class="error-message">Please enter a valid email address</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="enrollment">Enrollment Questions</option>
+                                    <option value="schedule">Class Scheduling</option>
+                                    <option value="payment">Payment & Pricing</option>
+                                    <option value="technical">Technical Support</option>
+                                    <option value="feedback">Feedback & Suggestions</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="error-message">Please select a subject</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="urgency">Priority Level</label>
+                                <div class="radio-group">
+                                    <div class="radio-option">
+                                        <input type="radio" id="low" name="urgency" value="low" checked>
+                                        <label for="low">Low - General inquiry</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="medium" name="urgency" value="medium">
+                                        <label for="medium">Medium - Need response soon</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="high" name="urgency" value="high">
+                                        <label for="high">High - Urgent assistance needed</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Please describe how we can help you..."></textarea>
+                                <div class="error-message">Please enter your message</div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <label for="newsletter">Subscribe to our newsletter for updates and Islamic quotes</label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="contact-info-card fade-in-up" data-delay="200">
+                        <div class="info-header">
+                            <h3>Get In Touch</h3>
+                            <p>We're always here to help with your Quranic learning journey</p>
+                        </div>
+
+                        <div class="info-content">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h4>Our Location</h4>
+                                    <p>Online Classes Worldwide<br>Physical Center: Coming Soon</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h4>Languages</h4>
+                                    <p>English, Arabic, Urdu<br>French & Spanish (Coming Soon)</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h4>Programs</h4>
+                                    <p>All levels from beginner<br>to advanced studies</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h4>Our Promise</h4>
+                                    <p>Dedicated support for your<br>spiritual learning journey</p>
+                                </div>
+                            </div>
+                        </div>
+
+                       
+
+                        <div class="arabic-verse-contact">
+                            <p>وَمَن يَتَّقِ اللَّهَ يَجْعَل لَّهُ مَخْرَجًا</p>
+                            <span>"And whoever fears Allah, He will make for him a way out" - Quran 65:2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="fade-in-up">Frequently Asked Questions</h2>
+                    <p class="fade-in-up" data-delay="100">Quick answers to common questions</p>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="faq-grid">
+                    <div class="faq-item fade-in-up" data-delay="100">
+                        <div class="faq-question">
+                            <h4>How do I register for classes?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can register easily through our registration page. Simply fill out the form, select your preferred program, and choose your schedule. Our team will contact you within 24 hours to confirm your enrollment.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item fade-in-up" data-delay="200">
+                        <div class="faq-question">
+                            <h4>What do I need for online classes?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You'll need a stable internet connection, a computer or tablet with camera and microphone, and a quiet learning environment. We'll provide all learning materials and access to our online platform.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item fade-in-up" data-delay="300">
+                        <div class="faq-question">
+                            <h4>Are there classes for complete beginners?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! Our Basic Quran Reading course is perfect for complete beginners. We start with the Arabic alphabet and gradually build up your reading and pronunciation skills.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item fade-in-up" data-delay="400">
+                        <div class="faq-question">
+                            <h4>What are the payment options?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer flexible payment options including monthly, quarterly, and annual plans. Payments can be made via credit card, PayPal, or bank transfer. Scholarships are available for those in need.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item fade-in-up" data-delay="500">
+                        <div class="faq-question">
+                            <h4>Can I schedule classes according to my timezone?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! We offer classes in multiple time zones to accommodate students worldwide. During registration, you can select your preferred time slots, and we'll match you with available teachers.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item fade-in-up" data-delay="600">
+                        <div class="faq-question">
+                            <h4>Is there a trial class available?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer a free 30-minute trial class for new students. This allows you to meet your teacher, understand our teaching method, and ensure our program is right for you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content fade-in-up">
+                    <h2>Ready to Start Your Journey?</h2>
+                    <p>Join thousands of students learning the Quran with our expert teachers</p>
+                    <div class="arabic-verse">
+                        <p>وَقُل رَّبِّ زِدْنِي عِلْمًا</p>
+                        <span>"My Lord, increase me in knowledge" - Quran 20:114</span>
+                    </div>
+                    <a href="registration.html" class="btn btn-primary">Register Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-moon"></i>
+                        <span>QuranLessons</span>
+                    </div>
+                    <p>Dedicated to providing quality Quranic education for all ages and backgrounds.</p>
+                    <div class="arabic-verse-footer">
+                        <p>وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ</p>
+                        <span>"And We have certainly made the Quran easy for remembrance"</span>
+                    </div>
+                  
+                </div>
+                
+              
+                
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@quranlessons.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-clock"></i> 24/7 Available</p>
+                        <p><i class="fas fa-globe"></i> Worldwide Classes</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 QuranLessons. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#">Terms of Service</a>
+                    <span>|</span>
+                    <a href="#">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // FAQ Toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
