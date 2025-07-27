@@ -82,7 +82,10 @@ body::before {
     z-index: -1;
     pointer-events: none;
 }
-
+.hero-content{
+   
+    margin-top: 110px; /* Space for Bismillah (50px) + Navbar (60px) */
+}
 /* Fix for page content hiding under headers */
 .main-content {
     margin-top: 110px; /* Space for Bismillah (50px) + Navbar (60px) */
